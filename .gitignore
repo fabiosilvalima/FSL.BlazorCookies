@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs
+/FSL.BlazorCookies/.vs/FSL.BlazorCookies/v16
+/FSL.BlazorCookies/obj
+/FSL.BlazorCookies/bin/Debug/netcoreapp3.1
+/FSL.BlazorCookies/bin/Debug/netcoreapp3.0
+/FSL.BlazorCookies/.vs/FSL.BlazorCookies/DesignTimeBuild
+*.user

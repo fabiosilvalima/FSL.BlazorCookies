@@ -1,0 +1,42 @@
+﻿@using FSL.BlazorCookies.Provider
+
+@page "/loginControl"
+@inject ICryptographyProvider CryptographyProvider
+@inject NavigationManager NavigationManager
+
+<AuthorizeView>
+    <Authorized>
+        <b>Hello, @context.User.Identity.Name!</b>
+        <a class="ml-md-auto btn btn-primary" href="logout" target="_top">Log out</a>
+    </Authorized>
+    <NotAuthorized>
+        <input type="text" placeholder="Email or Login" @bind="@Username" />
+        <input type="password" placeholder="Password" @bind="@Password" />
+        <a class="ml-md-auto btn btn-primary" href="@(MontarUrlLogin())" target="_top">Log in</a>
+    </NotAuthorized>
+</AuthorizeView>
+@code {
+
+    string Username = "";
+    string Password = "";
+    string url = "";
+
+    protected override void OnInitialized()
+    {
+        url = NavigationManager.Uri.ToString();
+    }
+
+    private string MontarUrlLogin()
+    {
+        if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
+        {
+            return "";
+        }
+
+        return string.Format(
+            "login?emailOrLogin={0}&password={1}&returnUrl={2}",
+            CryptographyProvider.Encrypt(Username),
+            CryptographyProvider.Encrypt(Password),
+            url);
+    }
+}

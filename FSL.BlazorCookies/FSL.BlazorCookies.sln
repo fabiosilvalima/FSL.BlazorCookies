@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSL.BlazorCookies", "FSL.BlazorCookies.csproj", "{A1B340CC-7853-48FA-897B-CAB0188C7823}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B340CC-7853-48FA-897B-CAB0188C7823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B340CC-7853-48FA-897B-CAB0188C7823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B340CC-7853-48FA-897B-CAB0188C7823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B340CC-7853-48FA-897B-CAB0188C7823}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EADA1E71-CD62-4806-9AD7-818CAB2171B4}
+	EndGlobalSection
+EndGlobal
