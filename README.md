@@ -7,7 +7,7 @@
 >
 > English: N/A
 >
-> Português: https://www.fabiosilvalima.net
+> Português: https://www.fabiosilvalima.net/cookies-identity-blazor-aspnetcore/
 
 ---
 
